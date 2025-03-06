@@ -1,7 +1,7 @@
 {
   "private": true,
   "engines": {
-    "node": "16.10.0"  // Change this to "14.16.0" or "17.0.0" if needed
+    "node": "16.10.0"
   },
   "scripts": {
     "build": "nuxt build",
