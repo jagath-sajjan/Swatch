@@ -7,7 +7,7 @@ export default ({
         classSuffix: '',
     },
     nitro: {
-        preset: 'vercel-edge',
+        preset: 'vercel-edge-light',
         serveStatic: true,
         storage: {
             data: {
