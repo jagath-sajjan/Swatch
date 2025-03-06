@@ -8,6 +8,9 @@ export default ({
     },
     nitro: {
         preset: 'vercel',
+        output: {
+            dir: '.output'
+        },
         serveStatic: true,
         storage: {
             data: {
