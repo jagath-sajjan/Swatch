@@ -11,7 +11,7 @@ export default ({
         serveStatic: true,
         storage: {
             data: {
-                driver: 'vercelKV'
+                driver: 'memory'
             }
         },
         experimental: {
