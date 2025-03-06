@@ -8,6 +8,14 @@ export default ({
     },
     nitro: {
         preset: 'vercel-edge',
-        serveStatic: true
+        serveStatic: true,
+        storage: {
+            data: {
+                driver: 'vercelKV'
+            }
+        },
+        experimental: {
+            asyncContext: true
+        }
     }
 })
