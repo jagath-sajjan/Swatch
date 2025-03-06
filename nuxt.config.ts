@@ -8,6 +8,6 @@ export default defineNuxtConfig({
     },
     nitro: {
         preset: "vercel",
-        nodeVersion: "16.10.0" // You can switch between 14.16.0, 16.10.0, or 17.0.0
+        nodeVersion: "18.x"
     }
 });
