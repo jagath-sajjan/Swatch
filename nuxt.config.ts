@@ -1,4 +1,4 @@
-export default ({
+export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@vueuse/nuxt'],
     build: {
         transpile: ["@headlessui/vue"],
@@ -7,9 +7,11 @@ export default ({
         classSuffix: '',
     },
     nitro: {
-        preset: 'vercel',
+        preset: 'vercel-edge',
         output: {
-            dir: '.output'
+            dir: 'dist',
+            serverDir: 'dist/server',
+            publicDir: 'dist/public'
         },
         serveStatic: true,
         storage: {
